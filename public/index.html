@@ -26,13 +26,18 @@
         <p>{{book.author}}</p>
       </li>
     </ul>
+    <input ng-model="newBookTitle"
+      placeholder="Book Title"
+      type="text">
+    <input ng-model="newBookAuthor"
+      type="text"
+      placeholder="Book Author">
     <button
-      ng-click="addBook('New Title', 'New Author')"
+      ng-click="addBook(newBookTitle, newBookAuthor)"
       type="button"
       name="button">
         Add New Book
-      </button>
-    </input>
+    </button>
 
   </div>
   <footer>
