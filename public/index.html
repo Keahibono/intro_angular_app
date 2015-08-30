@@ -17,8 +17,15 @@
           name="input1"
           id="input1">
     <p>{{ myModel }}</p>
-    <p>{{ characters }}</p>
-    <p>{{ books }}</p>
+
+        {{ characters }}
+
+    <ul>
+      <li ng-repeat="book in books">
+        <h4>{{book.title}}</h4>
+        <p>{{book.author}}</p>
+      </li>
+    </ul>
 
     </input>
 

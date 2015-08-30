@@ -2,6 +2,6 @@
   angular
     .module('myApp')
     .factory('CharacterVersionFactory', function (){
-      return ["Peter", "Meg", "Chris"];
+      return [{name: "Peter"}, {name: "Meg"}, {name: "Chris"}];
     });
 })();

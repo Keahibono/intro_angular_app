@@ -2,7 +2,9 @@
   angular
     .module('myApp')
     .service('BookService', function (){
-      var books = ["50 Shades", "DaVinci Code", "Atlas Shrugged"];
+      var books = [{title:"50 Shades", author: "Who Knows"},
+                  {title:"DaVinci Code", author: "Dan Brown"},
+                  {title: "Atlas Shrugged", author: "Weird Name"}];
         this.getBooks = function (){
           return books;
         };
