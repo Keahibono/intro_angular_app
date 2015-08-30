@@ -43,9 +43,9 @@
     <p>
     <input ng-model="movieFilter"
             type="text"
-            placeholder="1983">
+            placeholder="2016">
     <ul>
-    <li ng-repeat="movie in movies | filter: {release : movieFilter}">
+    <li ng-repeat="movie in movies | beforeYearFilter: movieFilter">
     <h4>{{movie.title}}</h4>
     </li>
   </ul>
@@ -64,6 +64,7 @@
   <script type="text/javascript" src="/js/factories.js"></script>
   <script type="text/javascript" src="/js/services.js"></script>
   <script type="text/javascript" src="/js/providers.js"></script>
+  <script type="text/javascript" src="/js/filters.js"></script>
   <script type="text/javascript" src="/js/myController.controller.js"></script>
 </body>
 </html>
