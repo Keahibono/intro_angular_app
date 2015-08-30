@@ -9,9 +9,22 @@ app.get('/', function (req, res){
 
 app.get('/api', function (req, res, next){
   res.json([
-    {title: 'Spectre'},
-    {title: 'Godzilla 2000'},
-    {title: 'Pulp Fiction'}
+    {
+      title: 'Spectre',
+      release: 2015
+    },
+    {
+      title: 'Godzilla 2000',
+      release: 2000
+    },
+    {
+      title: 'Pulp Fiction',
+      release: 1993
+    },
+    {
+      title: 'War Games',
+      release: 1983
+    }
   ]);
 });
 

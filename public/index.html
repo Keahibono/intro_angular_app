@@ -19,7 +19,7 @@
           id="input1">
     <p>{{ myModel }}</p>
 
-        {{ characters }}
+    <p>{{ characters }}</p>
 
     <ul>
       <li ng-repeat="book in books">
@@ -39,8 +39,13 @@
       name="button">
         Add New Book
     </button>
+    <p>
+    <p>
+    <input ng-model="movieFilter"
+            type="text"
+            placeholder="1983">
     <ul>
-    <li ng-repeat="movie in movies">
+    <li ng-repeat="movie in movies | filter: {release : movieFilter}">
     <h4>{{movie.title}}</h4>
     </li>
   </ul>
